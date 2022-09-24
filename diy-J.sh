@@ -29,7 +29,7 @@ mv $CURRENT_DIR/DIY/app_bg.png $CURRENT_DIR/$DIR/app/src/main/res/drawable/app_b
 #图标修改
 mv $CURRENT_DIR/DIY/app_icon.png $CURRENT_DIR/$DIR/app/src/main/res/drawable-xxhdpi/app_icon.png
 #接口地址修改
-sed -i 's/API_URL, ""/API_URL, "https://wabc.ml/m"/g' $CURRENT_DIR/$DIR/app/app/src/main/java/com/github/tvbox/osc/api/ApiConfig.java
+sed -i 's/""/"https://wabc.ml/m"/g' $CURRENT_DIR/$DIR/app/app/src/main/java/com/github/tvbox/osc/api/ApiConfig.java
 #取消选集全屏
 #sed -i 's/if (showPreview \&\& !fullWindows) toggleFullPreview/\/\/if (showPreview \&\& !fullWindows) toggleFullPreview/g' $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/ui/activity/DetailActivity.java
 #缩略图清晰度修改
