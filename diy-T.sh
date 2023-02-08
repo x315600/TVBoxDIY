@@ -37,7 +37,7 @@ sed -i 's/mContext, 300/mContext, 400/g' $CURRENT_DIR/$DIR/app/src/main/java/com
 sed -i 's/mContext, 400/mContext, 500/g' $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/ui/adapter/HistoryAdapter.java
 sed -i 's/mContext, 300/mContext, 400/g' $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/ui/adapter/HistoryAdapter.java
 #自带源修改 
-#sed -i 's/mn_config">配置地址/mn_config">https:\/\/315600.xyz\/s/g' $CURRENT_DIR/$DIR/app/src/main/res/values-zh/strings.xml
+#sed -i 's/<string name="app_source"></string>/<string name="app_source">https:\/\/315600.xyz\/s/g'</string> $CURRENT_DIR/$DIR/app/src/main/res/values-zh/strings.xml
 
 #添加PY支持
 wget --no-check-certificate -qO- "https://raw.githubusercontent.com/UndCover/PyramidStore/main/aar/pyramid.aar" -O $CURRENT_DIR/$DIR/app/libs/pyramid.aar
